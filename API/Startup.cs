@@ -44,12 +44,14 @@ namespace API {
 
             app.UseRouting ();
 
+            app.UseCors ("CorsPolicy");
+
             app.UseAuthorization ();
 
             app.UseEndpoints (endpoints => {
                 endpoints.MapControllers ();
             });
-            app.UseCors ("CorsPolicy");
+
         }
     }
 }
