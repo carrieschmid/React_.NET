@@ -1224,11 +1224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj",
+      "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj",
+      "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj",
       "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-      "outputPath": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/obj/",
+      "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -1245,8 +1245,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj": {
-              "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj"
+            "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj": {
+              "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj"
             }
           }
         }

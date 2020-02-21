@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carrieschmid/Desktop/Reactivities2/API/API.csproj": {}
+    "/Users/carrieschmid/Desktop/Demo/Reactivities2/API/API.csproj": {}
   },
   "projects": {
-    "/Users/carrieschmid/Desktop/Reactivities2/API/API.csproj": {
+    "/Users/carrieschmid/Desktop/Demo/Reactivities2/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/Reactivities2/API/API.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/API/API.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/API/API.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/Reactivities2/API/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -28,8 +28,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/Reactivities2/Application/Application.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Application/Application.csproj"
+              "/Users/carrieschmid/Desktop/Demo/Reactivities2/Application/Application.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Application/Application.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/Reactivities2/Application/Application.csproj": {
+    "/Users/carrieschmid/Desktop/Demo/Reactivities2/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/Reactivities2/Application/Application.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Application/Application.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Application/Application.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/Reactivities2/Application/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Application/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -94,11 +94,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj"
+              "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj"
               },
-              "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj"
+              "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj"
               }
             }
           }
@@ -111,6 +111,12 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -130,14 +136,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj": {
+    "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/Reactivities2/Domain/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -183,14 +189,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj": {
+    "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/Persistence.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/Reactivities2/Persistence/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -207,8 +213,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/Reactivities2/Domain/Domain.csproj"
+              "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj"
               }
             }
           }
