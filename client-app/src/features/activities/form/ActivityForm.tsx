@@ -3,13 +3,12 @@ import { Segment, Form, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 import { v4 as uuid } from "uuid";
 import ActivityStore from "../../../app/stores/activityStore";
+import { observer } from "mobx-react-lite";
 
 interface IProps {
   activity: IActivity;
 }
-export const ActivityForm: React.FC<IProps> = ({
-  activity: initializeFormState
-}) => {
+const ActivityForm: React.FC<IProps> = ({ activity: initializeFormState }) => {
   const activityStore = useContext(ActivityStore);
   const {
     createActivity,
@@ -112,3 +111,5 @@ export const ActivityForm: React.FC<IProps> = ({
     </Segment>
   );
 };
+
+export default observer(ActivityForm);
