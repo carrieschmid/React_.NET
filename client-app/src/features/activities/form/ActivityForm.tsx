@@ -11,29 +11,18 @@ interface DetailParams {
 }
 
 const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
-  match
+  match,
+  history
 }) => {
   const activityStore = useContext(ActivityStore);
   const {
     createActivity,
     editActivity,
     submitting,
-    cancelFormOpen,
     activity: initialFormState,
     loadActivity,
     clearActivity
   } = activityStore;
-
-  useEffect(() => {
-    if (match.params.id) {
-      loadActivity(match.params.id).then(
-        () => initialFormState && setActivity(initialFormState)
-      );
-    }
-    return () => {
-      clearActivity();
-    };
-  }, [loadActivity, match.params.id, clearActivity, initialFormState]);
 
   const [activity, setActivity] = useState<IActivity>({
     id: "",
@@ -45,15 +34,36 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
     venue: ""
   });
 
+  useEffect(() => {
+    if (match.params.id && activity.id.length === 0) {
+      loadActivity(match.params.id).then(
+        () => initialFormState && setActivity(initialFormState)
+      );
+    }
+    return () => {
+      clearActivity();
+    };
+  }, [
+    loadActivity,
+    match.params.id,
+    clearActivity,
+    initialFormState,
+    activity.id.length
+  ]);
+
   const handleSubmit = () => {
     if (activity.id.length === 0) {
       let newActivity = {
         ...activity,
         id: uuid()
       };
-      createActivity(newActivity);
+      createActivity(newActivity).then(() =>
+        history.push(`/activities/${newActivity.id}`)
+      );
     } else {
-      editActivity(activity);
+      editActivity(activity).then(() =>
+        history.push(`/activities/${activity.id}`)
+      );
     }
   };
 
@@ -113,7 +123,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
           content="Submit"
         />
         <Button
-          onClick={cancelFormOpen}
+          onClick={() => history.push("/activities")}
           floated="right"
           type="button"
           content="Cancel"
