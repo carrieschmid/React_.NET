@@ -13,6 +13,7 @@ import HomePage from "../../features/home/HomePage";
 import ActivityForm from "../../features/activities/form/ActivityForm";
 import ActivityDetails from "../../features/activities/details/ActivityDetails";
 import { ToastContainer } from "react-toastify";
+//Toast not working, looking at section 133
 import NotFound from "./NotFound";
 //observer takes another component as it's parameter and returns a new component with extra powers to observe observables
 
