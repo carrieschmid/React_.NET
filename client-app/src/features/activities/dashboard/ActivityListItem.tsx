@@ -13,14 +13,14 @@ const ActivityListItem: React.FC<{ activity: IActivity }> = ({ activity }) => {
             <Item.Image size="tiny" circular src="/assets/user.png" />
             <Item.Content>
               <Item.Header as="a">{activity.title}</Item.Header>
-              {/* <Item.Meta>{format(activity.date!, "eeee do MMMM")}</Item.Meta> */}
+              {/* <Item.Meta>{format(activity., "eeee do MMMM")}</Item.Meta> */}
               <Item.Description>Hosted by Bob</Item.Description>
             </Item.Content>
           </Item>
         </Item.Group>
       </Segment>
       <Segment>
-        <Icon name="clock" /> {format(activity.date!, "h:mm a")}
+        <Icon name="clock" /> {format(activity.date, "h:mm a")}
         <Icon name="marker" /> {activity.venue}, {activity.city}
       </Segment>
       <Segment secondary>Attendees will go here</Segment>

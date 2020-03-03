@@ -2,14 +2,17 @@ import React from "react";
 import { FieldRenderProps } from "react-final-form";
 import { FormFieldProps, Form, Label } from "semantic-ui-react";
 import { DateTimePicker } from "react-widgets";
-import { _allowStateChangesInsideComputed } from "mobx";
 
-interface IProps extends FieldRenderProps<Date, HTMLElement>, FormFieldProps {}
+interface IProps
+  extends FieldRenderProps<Date, HTMLInputElement>,
+    FormFieldProps {}
 
 const DateInput: React.FC<IProps> = ({
   input,
   width,
   placeholder,
+  date = false,
+  time = false,
   meta: { touched, error },
   ...rest
 }) => {
@@ -19,7 +22,11 @@ const DateInput: React.FC<IProps> = ({
         placeholder={placeholder}
         value={input.value || null}
         onChange={input.onChange}
-        // {...rest}
+        onBlur={input.onBlur}
+        onKeyDown={(e) => e.preventDefault()}
+        date={date}
+        time={time}
+        {...rest}
       />
       {touched && error && (
         <Label basic color="red">
@@ -29,4 +36,5 @@ const DateInput: React.FC<IProps> = ({
     </Form.Field>
   );
 };
+
 export default DateInput;
