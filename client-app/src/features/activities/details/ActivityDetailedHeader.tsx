@@ -3,6 +3,7 @@ import { Segment, Item, Button, Image, Header } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 import { observer } from "mobx-react-lite";
 import { Link } from "react-router-dom";
+import { format } from "date-fns";
 
 const activityImageStyle = {
   filter: "brightness(30%)"
@@ -37,7 +38,7 @@ const ActivityDetailedHeader: React.FC<{ activity: IActivity }> = ({
                   content={"Title"}
                   style={{ color: "white" }}
                 />
-                <p>{activity.date}</p>
+                <p>{format(activity.date!, "eee do MMM")}</p>
                 <p>
                   Hosted by <strong>Bob</strong>
                 </p>
