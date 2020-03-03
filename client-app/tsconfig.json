@@ -16,5 +16,9 @@
     "jsx": "preserve",
     "experimentalDecorators": true
   },
-  "include": ["src", "app/layout/App.tsx"]
+  "include": [
+    "src",
+    // "app/layout/App.tsx"
+    "./typing-custom/**/*.ts"
+  ]
 }
