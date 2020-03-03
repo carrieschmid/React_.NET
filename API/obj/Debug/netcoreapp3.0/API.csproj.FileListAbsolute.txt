@@ -103,3 +103,8 @@
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/obj/Debug/netcoreapp3.0/API.MvcApplicationPartsAssemblyInfo.cs
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/API.StaticWebAssets.xml
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.UI.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
