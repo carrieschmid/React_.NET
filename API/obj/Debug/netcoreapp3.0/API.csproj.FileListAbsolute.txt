@@ -102,3 +102,4 @@
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/FluentValidation.AspNetCore.dll
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/obj/Debug/netcoreapp3.0/API.MvcApplicationPartsAssemblyInfo.cs
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
