@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Activities;
+using Application.Interfaces;
 using API.Middleware;
 using Domain;
 using FluentValidation.AspNetCore;
@@ -47,7 +48,8 @@ namespace API {
             identityBuilder.AddEntityFrameworkStores<DataContext> ();
             identityBuilder.AddSignInManager<SignInManager<AppUser>> ();
 
-            services.AddAuthentication ();
+            // services.AddAuthentication ();
+            services.AddScoped<IJwtGenerator, JwtGenerator> ();
 
         }
 
