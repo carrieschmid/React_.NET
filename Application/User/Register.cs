@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Application.Errors;
 using Application.Interfaces;
+using Application.Validators;
 using Domain;
 using FluentValidation;
 using MediatR;
@@ -26,8 +27,8 @@ namespace Application.User {
             public CommandValidator () {
                 RuleFor (x => x.DisplayName).NotEmpty ();
                 RuleFor (x => x.Username).NotEmpty ();
-                RuleFor (x => x.Email).NotEmpty ();
-                RuleFor (x => x.Password).NotEmpty ();
+                RuleFor (x => x.Email).NotEmpty ().EmailAddress ();
+                RuleFor (x => x.Password).Password ();
             }
         }
 

@@ -45,6 +45,8 @@ namespace API.Middleware {
                     errors
                 });
 
+                await context.Response.WriteAsync (result);
+
             }
 
         }

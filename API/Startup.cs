@@ -60,7 +60,7 @@ namespace API {
 
             var key = new SymmetricSecurityKey (Encoding.UTF8.GetBytes (Configuration["TokenKey"]));
             services.AddAuthentication (JwtBearerDefaults.AuthenticationScheme).AddJwtBearer (opt => {
-                opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters {
+                opt.TokenValidationParameters = new TokenValidationParameters {
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = key,
                 ValidateAudience = false,
@@ -68,6 +68,7 @@ namespace API {
                 };
             });
             services.AddScoped<IJwtGenerator, JwtGenerator> ();
+            services.AddScoped<IUserAccessor, UserAccessor> ();
 
         }
 
