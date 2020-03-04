@@ -108,3 +108,12 @@
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.Logging.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.Tokens.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Infrastructure.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Infrastructure.pdb
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.Protocols.dll
+/Users/carrieschmid/Desktop/Demo/Reactivities2/API/bin/Debug/netcoreapp3.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

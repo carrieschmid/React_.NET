@@ -1,14 +1,19 @@
+using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
 using Application.Interfaces;
 using Domain;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Infrastructure.Security {
     public class JwtGenerator : IJwtGenerator {
-        string CreateToken (AppUser user) {
+
+        public string CreateToken (AppUser user) {
             var claims = new List<Claim> {
-                new Claim (JwtRegisteredClaimNames.NameId, user, UserName)
+                new Claim (JwtRegisteredClaimNames.NameId, user.UserName)
             };
             var key = new SymmetricSecurityKey (Encoding.UTF8.GetBytes ("super secret key"));
             var creds = new SigningCredentials (key, SecurityAlgorithms.HmacSha512Signature);
