@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj": {}
+    "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj": {}
   },
   "projects": {
-    "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/Persistence.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Persistence/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -87,8 +87,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/Demo/Reactivities2/Domain/Domain.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj"
               }
             }
           }
