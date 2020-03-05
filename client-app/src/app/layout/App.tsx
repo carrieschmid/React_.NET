@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext, useEffect } from "react";
 import { Container } from "semantic-ui-react";
 import NavBar from "../../features/nav/NavBar";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
@@ -16,9 +16,25 @@ import ActivityDetails from "../../features/activities/details/ActivityDetails";
 import { ToastContainer } from "react-toastify";
 //Toast not working, looking at section 133
 import NotFound from "./NotFound";
+import { RootStoreContext } from "../stores/rootStore";
+import { LoadingComponent } from "./LoadingComponent";
 //observer takes another component as it's parameter and returns a new component with extra powers to observe observables
 
 const App: React.FC<RouteComponentProps> = ({ location }) => {
+  const rootStore = useContext(RootStoreContext);
+  const { setAppLoaded, token, appLoaded } = rootStore.commonStore;
+  const { getUser } = rootStore.userStore;
+
+  useEffect(() => {
+    if (token) {
+      getUser().finally(() => setAppLoaded());
+    } else {
+      setAppLoaded();
+    }
+  }, [getUser, setAppLoaded, token]);
+
+  if (!appLoaded) return <LoadingComponent content="Loading app..." />;
+
   return (
     <Fragment>
       <ToastContainer position="bottom-right" />
