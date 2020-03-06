@@ -2,8 +2,8 @@ import React, { useEffect, useContext } from "react";
 import { Grid } from "semantic-ui-react";
 import ActivityList from "./ActivityList";
 import { observer } from "mobx-react-lite";
-import { LoadingComponent } from "../../../app/layout/LoadingComponent";
 import { RootStoreContext } from "../../../app/stores/rootStore";
+import ActivityListItemPlaceholder from "./ActivityListItemPlaceholder";
 
 export const ActivityDashboard: React.FC = () => {
   const rootStore = useContext(RootStoreContext);
@@ -13,11 +13,10 @@ export const ActivityDashboard: React.FC = () => {
     loadActivities();
   }, [loadActivities]);
 
-  if (loadingInitial) return <LoadingComponent content="Loading activities." />;
   return (
     <Grid>
       <Grid.Column width={10}>
-        <ActivityList />
+        {loadingInitial ? <ActivityListItemPlaceholder /> : <ActivityList />}
       </Grid.Column>
       <Grid.Column width={6}>
         <h2>Activity filters</h2>
