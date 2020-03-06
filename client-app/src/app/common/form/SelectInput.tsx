@@ -11,8 +11,8 @@ const SelectInput: React.FC<IProps> = ({
   width,
   options,
   placeholder,
-  meta: { touched, error },
-  ...rest
+  meta: { touched, error }
+  // ...rest
 }) => {
   return (
     <Form.Field error={touched && !!error} width={width}>
@@ -22,7 +22,7 @@ const SelectInput: React.FC<IProps> = ({
         placeholder={placeholder}
         options={options}
       />
-      <input {...input} placeholder={placeholder} />
+      {/* <input {...input} placeholder={placeholder} /> */}
       {touched && error && (
         <Label basic color="red">
           {error}
