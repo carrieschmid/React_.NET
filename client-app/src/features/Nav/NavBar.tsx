@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
 import { Menu, Container, Button, Dropdown, Image } from "semantic-ui-react";
 import { observer } from "mobx-react-lite";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { RootStoreContext } from "../../app/stores/rootStore";
 
 // import React from "./node_modules/react";
 // import { Menu, Container, Button } from "./node_modules/semantic-ui-react";
 // import { observer } from "./node_modules/mobx-react-lite";
-// import { NavLink } from "./node_modules/react-router-dom";
+// import { Link } from "./node_modules/react-router-dom";
 
-const NavBar: React.FC = () => {
+const Bar: React.FC = () => {
   const rootStore = useContext(RootStoreContext);
   const { user, logout } = rootStore.userStore;
   return (
     <Menu fixed="top" inverted>
       <Container>
-        <Menu.Item header as={NavLink} exact to="/">
+        <Menu.Item header as={Link} exact to="/">
           <img
             src="/assets/logo.png"
             alt="logo"
@@ -23,10 +23,10 @@ const NavBar: React.FC = () => {
           />
           Reactivities
         </Menu.Item>
-        <Menu.Item name="Activities" as={NavLink} to="/activities" />
+        <Menu.Item name="Activities" as={Link} to="/activities" />
         <Menu.Item>
           <Button
-            as={NavLink}
+            as={Link}
             to="/createActivity"
             positive
             content="Create Activity"
@@ -57,4 +57,4 @@ const NavBar: React.FC = () => {
   );
 };
 
-export default observer(NavBar);
+export default observer(Bar);
