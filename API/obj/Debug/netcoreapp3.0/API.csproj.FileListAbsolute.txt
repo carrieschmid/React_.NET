@@ -189,3 +189,5 @@
 /Users/carrieschmid/Desktop/React_.NET/API/obj/Debug/netcoreapp3.0/API.pdb
 /Users/carrieschmid/Desktop/React_.NET/API/bin/Debug/netcoreapp3.0/AutoMapper.dll
 /Users/carrieschmid/Desktop/React_.NET/API/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/carrieschmid/Desktop/React_.NET/API/bin/Debug/netcoreapp3.0/Castle.Core.dll
+/Users/carrieschmid/Desktop/React_.NET/API/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Proxies.dll
