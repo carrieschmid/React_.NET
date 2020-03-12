@@ -199,7 +199,7 @@
           "System.IO.Compression": "4.2.1.0",
           "System.IO.Compression.FileSystem": "4.0.0.0",
           "System.IO.Compression.ZipFile": "4.0.4.0",
-          "System.IO": "4.2.1.0",
+          "System.IO.Reference": "4.2.1.0",
           "System.IO.FileSystem": "4.1.1.0",
           "System.IO.FileSystem.DriveInfo": "4.1.1.0",
           "System.IO.FileSystem.Primitives": "4.1.1.0",
@@ -235,20 +235,20 @@
           "System.Numerics.Vectors": "4.1.5.0",
           "System.ObjectModel": "4.1.1.0",
           "System.Reflection.DispatchProxy": "4.0.5.0",
-          "System.Reflection": "4.2.1.0",
-          "System.Reflection.Emit": "4.1.1.0",
-          "System.Reflection.Emit.ILGeneration": "4.1.0.0",
+          "System.Reflection.Reference": "4.2.1.0",
+          "System.Reflection.Emit.Reference": "4.1.1.0",
+          "System.Reflection.Emit.ILGeneration.Reference": "4.1.0.0",
           "System.Reflection.Emit.Lightweight": "4.1.0.0",
           "System.Reflection.Extensions": "4.1.1.0",
           "System.Reflection.Metadata": "1.4.4.0",
-          "System.Reflection.Primitives": "4.1.1.0",
+          "System.Reflection.Primitives.Reference": "4.1.1.0",
           "System.Reflection.TypeExtensions": "4.1.2.0",
           "System.Resources.Reader": "4.1.1.0",
           "System.Resources.ResourceManager": "4.1.1.0",
           "System.Resources.Writer": "4.1.1.0",
           "System.Runtime.CompilerServices.Unsafe": "4.0.5.0",
           "System.Runtime.CompilerServices.VisualC": "4.1.1.0",
-          "System.Runtime": "4.2.1.0",
+          "System.Runtime.Reference": "4.2.1.0",
           "System.Runtime.Extensions": "4.2.1.0",
           "System.Runtime.Handles": "4.1.1.0",
           "System.Runtime.InteropServices": "4.2.1.0",
@@ -279,7 +279,7 @@
           "System.ServiceModel.Web": "4.0.0.0",
           "System.ServiceProcess": "4.0.0.0",
           "System.Text.Encoding.CodePages": "4.1.2.0",
-          "System.Text.Encoding": "4.1.1.0",
+          "System.Text.Encoding.Reference": "4.1.1.0",
           "System.Text.Encoding.Extensions": "4.1.1.0",
           "System.Text.Encodings.Web": "4.0.4.0",
           "System.Text.Json.Reference": "4.0.0.0",
@@ -288,7 +288,7 @@
           "System.Threading": "4.1.1.0",
           "System.Threading.Overlapped": "4.1.1.0",
           "System.Threading.Tasks.Dataflow": "4.6.4.0",
-          "System.Threading.Tasks": "4.1.1.0",
+          "System.Threading.Tasks.Reference": "4.1.1.0",
           "System.Threading.Tasks.Extensions.Reference": "4.3.0.0",
           "System.Threading.Tasks.Parallel": "4.0.3.0",
           "System.Threading.Thread": "4.1.1.0",
@@ -317,6 +317,36 @@
         },
         "compile": {
           "API.dll": {}
+        }
+      },
+      "AutoMapper/8.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "8.1.1.0",
+            "fileVersion": "8.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "6.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "FluentValidation/8.5.1": {
@@ -722,6 +752,8 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
       "Newtonsoft.Json/12.0.2": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -877,16 +909,78 @@
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
+      "System.IO/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
       "System.Memory/4.5.3": {},
+      "System.Reflection/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.IO": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Emit/4.3.0": {
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Emit.ILGeneration/4.3.0": {
+        "dependencies": {
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Primitives/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
       "System.Security.Cryptography.Cng/4.5.0": {},
+      "System.Text.Encoding/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.Text.Json/4.6.0": {
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "System.Threading.Tasks/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.Threading.Tasks.Extensions/4.5.2": {},
       "Application/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
           "Domain": "1.0.0",
           "FluentValidation.AspNetCore": "8.5.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
@@ -1955,7 +2049,7 @@
         },
         "compileOnly": true
       },
-      "System.IO/4.2.1.0": {
+      "System.IO.Reference/4.2.1.0": {
         "compile": {
           "System.IO.dll": {}
         },
@@ -2171,19 +2265,19 @@
         },
         "compileOnly": true
       },
-      "System.Reflection/4.2.1.0": {
+      "System.Reflection.Reference/4.2.1.0": {
         "compile": {
           "System.Reflection.dll": {}
         },
         "compileOnly": true
       },
-      "System.Reflection.Emit/4.1.1.0": {
+      "System.Reflection.Emit.Reference/4.1.1.0": {
         "compile": {
           "System.Reflection.Emit.dll": {}
         },
         "compileOnly": true
       },
-      "System.Reflection.Emit.ILGeneration/4.1.0.0": {
+      "System.Reflection.Emit.ILGeneration.Reference/4.1.0.0": {
         "compile": {
           "System.Reflection.Emit.ILGeneration.dll": {}
         },
@@ -2207,7 +2301,7 @@
         },
         "compileOnly": true
       },
-      "System.Reflection.Primitives/4.1.1.0": {
+      "System.Reflection.Primitives.Reference/4.1.1.0": {
         "compile": {
           "System.Reflection.Primitives.dll": {}
         },
@@ -2249,7 +2343,7 @@
         },
         "compileOnly": true
       },
-      "System.Runtime/4.2.1.0": {
+      "System.Runtime.Reference/4.2.1.0": {
         "compile": {
           "System.Runtime.dll": {}
         },
@@ -2435,7 +2529,7 @@
         },
         "compileOnly": true
       },
-      "System.Text.Encoding/4.1.1.0": {
+      "System.Text.Encoding.Reference/4.1.1.0": {
         "compile": {
           "System.Text.Encoding.dll": {}
         },
@@ -2489,7 +2583,7 @@
         },
         "compileOnly": true
       },
-      "System.Threading.Tasks/4.1.1.0": {
+      "System.Threading.Tasks.Reference/4.1.1.0": {
         "compile": {
           "System.Threading.Tasks.dll": {}
         },
@@ -2634,6 +2728,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/8.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "path": "automapper/8.1.1",
+      "hashPath": "automapper.8.1.1.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MPMgL6JGEH2Egmgh3+tw2UVX05ph8As7YtYWzt2ZDCc0STHGG5EsV3UMWH/g4aHaN1q20Bbc0PTMy3I0PwgBGQ==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.1",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512"
     },
     "FluentValidation/8.5.1": {
       "type": "package",
@@ -2922,6 +3030,20 @@
       "path": "microsoft.identitymodel.tokens/5.5.0",
       "hashPath": "microsoft.identitymodel.tokens.5.5.0.nupkg.sha512"
     },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+/wsO2DaAxywZnUhpWQBkCcn+SlpPPGOlXqEN8h/cWSXNarRb0IBzt574inFN2qYZH6PCTl0bwm/i+sGifLAuw==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RFtc4DtxjMbn1pWT1bgaXm2ull2q8nv1I55hMTY2odbU7vVXubOjlCZn2VNkQld/rT7ms8zkJ+6XKEGxaoUVGA==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
     "Newtonsoft.Json/12.0.2": {
       "type": "package",
       "serviceable": true,
@@ -2985,12 +3107,54 @@
       "path": "system.identitymodel.tokens.jwt/5.5.0",
       "hashPath": "system.identitymodel.tokens.jwt.5.5.0.nupkg.sha512"
     },
+    "System.IO/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ff+HAo4AdHzYjFpzLUCp2WwhsWl4Y4meInJZXHMg3ja9KSP9pzhRXgokXAikQ/LILl8+sWl5V3TokHbQhy68HA==",
+      "path": "system.io/4.3.0",
+      "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
     "System.Memory/4.5.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Reflection/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jPeILSS3nNY103bbde0cg2+/dQcCItKd0bOiWHeWqMlkDG5ffmTrCn4sTo5Z/fFJT5xE0qE4nBg1FvRtY9dydQ==",
+      "path": "system.reflection/4.3.0",
+      "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jlEgDwWzE3fmZQzSlFCiEYlzxjAcZO4NG3bfJ5Fj5ctLXhWi87g6eA7fm/LSwSY+3qd5z0TNLcaSuChxzE2F4A==",
+      "path": "system.reflection.emit/4.3.0",
+      "hashPath": "system.reflection.emit.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.ILGeneration/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5ZkUotNqw7u/SLtXp79IgUDMQSy6PDGbVUmrAItyni01m9Qi481bJrkeZWFzpikb8DMQOwc972oKQLnCywJK+A==",
+      "path": "system.reflection.emit.ilgeneration/4.3.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-twMnUSJruooB92jnDCQrTJepCfYqmkF2IUKGwVUEtiYX3SvssZzgD56YtJSgztIodfPW+cPNIRIYhMVDtz0QmQ==",
+      "path": "system.reflection.primitives/4.3.0",
+      "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zsfAxyZuFOZnVEnrfuVMISJ+iD8s5VqSgqCDeIzqVJW+w5u+3W1UW1qK+jwgXzBlE9khdEutivYZFm+v8JNxcQ==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Cng/4.5.0": {
       "type": "package",
@@ -2999,12 +3163,26 @@
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },
+    "System.Text.Encoding/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eLG1FSsQTeoYgHiEqu83q3m0rd4MyKkqCErjj7OFbwJRYC6ONG5Ad/dPzYSLJp9mFKz89L/P1Fv0RpAv9rHT9w==",
+      "path": "system.text.encoding/4.3.0",
+      "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
     "System.Text.Json/4.6.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
       "path": "system.text.json/4.6.0",
       "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UtETt6o1vuFfrshcl7pyOeTyb6TYoWc9uR5uy9EGWlNCy1CthH3OVz5k22y+9aPybWtVNCfsorH5+XYERA7BvA==",
+      "path": "system.threading.tasks/4.3.0",
+      "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
     "System.Threading.Tasks.Extensions/4.5.2": {
       "type": "package",
@@ -3883,7 +4061,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.IO/4.2.1.0": {
+    "System.IO.Reference/4.2.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4063,17 +4241,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection/4.2.1.0": {
+    "System.Reflection.Reference/4.2.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.Emit/4.1.1.0": {
+    "System.Reflection.Emit.Reference/4.1.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.Emit.ILGeneration/4.1.0.0": {
+    "System.Reflection.Emit.ILGeneration.Reference/4.1.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4093,7 +4271,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.Primitives/4.1.1.0": {
+    "System.Reflection.Primitives.Reference/4.1.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4128,7 +4306,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Runtime/4.2.1.0": {
+    "System.Runtime.Reference/4.2.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4283,7 +4461,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Encoding/4.1.1.0": {
+    "System.Text.Encoding.Reference/4.1.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4328,7 +4506,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Threading.Tasks/4.1.1.0": {
+    "System.Threading.Tasks.Reference/4.1.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
