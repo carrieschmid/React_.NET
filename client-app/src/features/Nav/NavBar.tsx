@@ -9,7 +9,7 @@ import { RootStoreContext } from "../../app/stores/rootStore";
 // import { observer } from "./node_modules/mobx-react-lite";
 // import { Link } from "./node_modules/react-router-dom";
 
-const Bar: React.FC = () => {
+const NavBar: React.FC = () => {
   const rootStore = useContext(RootStoreContext);
   const { user, logout } = rootStore.userStore;
   return (
@@ -57,4 +57,4 @@ const Bar: React.FC = () => {
   );
 };
 
-export default observer(Bar);
+export default observer(NavBar);
