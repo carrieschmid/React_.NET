@@ -1,3 +1,5 @@
+import { string } from "prop-types";
+
 export interface IActivity {
   id: string;
   title: string;
@@ -6,6 +8,7 @@ export interface IActivity {
   date: Date;
   city: string;
   venue: string;
+  attendees: IAttendee[];
 }
 
 export interface IActivityFormValues extends Partial<IActivity> {
@@ -28,4 +31,11 @@ export class ActivityFormValues implements IActivityFormValues {
     }
     Object.assign(this, init);
   }
+}
+
+export interface IAttendee {
+  username: string;
+  displayName: string;
+  image: string;
+  isHost: boolean;
 }
