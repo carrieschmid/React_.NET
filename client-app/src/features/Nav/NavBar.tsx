@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Menu, Container, Button, Dropdown, Image } from "semantic-ui-react";
 import { observer } from "mobx-react-lite";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { RootStoreContext } from "../../app/stores/rootStore";
 
 // import React from "./node_modules/react";
@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
   return (
     <Menu fixed="top" inverted>
       <Container>
-        <Menu.Item header as={Link} exact to="/">
+        <Menu.Item header as={NavLink} exact to="/">
           <img
             src="/assets/logo.png"
             alt="logo"
@@ -26,10 +26,10 @@ const NavBar: React.FC = () => {
         <Menu.Item name="Activities" as={Link} to="/activities" />
         <Menu.Item>
           <Button
-            as={Link}
+            as={NavLink}
             to="/createActivity"
             positive
-            content="Create Activity"
+            content="create Activity"
           />
         </Menu.Item>
         {user && (
