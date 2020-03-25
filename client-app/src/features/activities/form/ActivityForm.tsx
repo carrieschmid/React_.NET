@@ -73,6 +73,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
         ...activity,
         id: uuid()
       };
+
       createActivity(newActivity);
     } else {
       editActivity(activity);
@@ -140,7 +141,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
                 />
                 <Button
                   loading={submitting}
-                  disabled={loading || invalid || pristine}
+                  disabled={loading}
                   floated="right"
                   positive
                   type="submit"
@@ -149,7 +150,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailParams>> = ({
                 <Button
                   onClick={
                     activity.id
-                      ? () => history.push(`/activities${activity.id}`)
+                      ? () => history.push(`/activities/${activity.id}`)
                       : () => history.push("/activities")
                   }
                   disabled={loading}

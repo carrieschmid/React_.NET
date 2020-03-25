@@ -19,6 +19,6 @@
   "include": [
     "src",
     // "app/layout/App.tsx"
-    "./typing-custom/**/*.ts"
+    "./typings-custom/**/*.ts"
   ]
 }

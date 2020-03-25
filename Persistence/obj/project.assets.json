@@ -6135,11 +6135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj",
+      "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj",
+      "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj",
       "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-      "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/obj/",
+      "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -6156,8 +6156,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj": {
-              "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj"
+            "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj": {
+              "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj"
             }
           }
         }
