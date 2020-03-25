@@ -6793,11 +6793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-      "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/obj/",
+      "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -6814,8 +6814,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj": {
-              "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj"
+            "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj": {
+              "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj"
             }
           }
         }

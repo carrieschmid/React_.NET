@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carrieschmid/Desktop/React_.NET/API/API.csproj": {}
+    "/Users/carrieschmid/Desktop/React_.NET_final.NET/API/API.csproj": {}
   },
   "projects": {
-    "/Users/carrieschmid/Desktop/React_.NET/API/API.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET_final.NET/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/API/API.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/API/API.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/API/API.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/API/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -28,11 +28,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj"
               },
-              "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Application/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -105,11 +105,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj"
               },
-              "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj"
               }
             }
           }
@@ -155,14 +155,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -214,14 +214,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Infrastructure/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -238,8 +238,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Application/Application.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Application/Application.csproj"
               }
             }
           }
@@ -277,14 +277,14 @@
         }
       }
     },
-    "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj": {
+    "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/Persistence.csproj",
+        "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/Persistence.csproj",
         "packagesPath": "/Users/carrieschmid/.nuget/packages/",
-        "outputPath": "/Users/carrieschmid/Desktop/React_.NET/Persistence/obj/",
+        "outputPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Persistence/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -301,8 +301,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj": {
-                "projectPath": "/Users/carrieschmid/Desktop/React_.NET/Domain/Domain.csproj"
+              "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj": {
+                "projectPath": "/Users/carrieschmid/Desktop/React_.NET_final.NET/Domain/Domain.csproj"
               }
             }
           }
